@@ -59,12 +59,11 @@ const obj = {
       body: JSON.stringify({ obj })
     };
 
-    // fetch(testURL, requestOptions)
-    //   .then(response => response.json())
-    //   .then(data => this.setState({ postId: data.id }));
+   
      const myRequest = new Request(testURL, myInit);
 
     fetch(myRequest).then(function (response) {
+      alert("New Segment Created");
       return response;
     }).then(function (response) {
       console.log(response);
